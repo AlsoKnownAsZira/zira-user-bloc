@@ -10,7 +10,7 @@ class HomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("ALL USERS"),
+        title: const Text("ALL USERS"),
       ),
       body: ListView.builder(
         itemCount: 5,
@@ -27,11 +27,11 @@ class HomePage extends StatelessWidget {
             leading: CircleAvatar(
               child: Text("${index + 1}"),
             ),
-            title: Text("Nama user"),
-            subtitle: Text("Umur user"),
+            title: const Text("Name"),
+            subtitle: const Text("Age"),
             trailing: IconButton(
               onPressed: () {},
-              icon: Icon(Icons.delete),
+              icon: const Icon(Icons.delete),
             ),
           );
         },
@@ -45,7 +45,7 @@ class HomePage extends StatelessWidget {
             ),
           );
         },
-        child: Icon(Icons.add),
+        child: const Icon(Icons.add),
       ),
     );
   }

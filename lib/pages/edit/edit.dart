@@ -7,28 +7,28 @@ class EditPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("EDIT USER"),
+        title: const Text("EDIT USER"),
       ),
       body: ListView(
-        padding: EdgeInsets.all(20),
+        padding: const EdgeInsets.all(20),
         children: [
-          TextField(
+          const TextField(
             decoration: InputDecoration(
               labelText: "Name",
               border: OutlineInputBorder(),
             ),
           ),
-          SizedBox(height: 20),
-          TextField(
+          const SizedBox(height: 20),
+          const TextField(
             decoration: InputDecoration(
               labelText: "Age",
               border: OutlineInputBorder(),
             ),
           ),
-          SizedBox(height: 20),
+          const SizedBox(height: 20),
           ElevatedButton(
             onPressed: () {},
-            child: Text("EDIT USER"),
+            child: const Text("EDIT USER"),
           ),
         ],
       ),

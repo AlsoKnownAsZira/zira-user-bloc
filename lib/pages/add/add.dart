@@ -10,25 +10,25 @@ class AddPage extends StatelessWidget {
         title: Text("ADD USER"),
       ),
       body: ListView(
-        padding: EdgeInsets.all(20),
+        padding: const  EdgeInsets.all(20),
         children: [
-          TextField(
+        const  TextField(
             decoration: InputDecoration(
               labelText: "Name",
               border: OutlineInputBorder(),
             ),
           ),
-          SizedBox(height: 20),
-          TextField(
+         const SizedBox(height: 20),
+          const TextField(
             decoration: InputDecoration(
               labelText: "Age",
               border: OutlineInputBorder(),
             ),
           ),
-          SizedBox(height: 20),
+          const SizedBox(height: 20),
           ElevatedButton(
             onPressed: () {},
-            child: Text("ADD USER"),
+            child: const Text("ADD USER"),
           ),
         ],
       ),
